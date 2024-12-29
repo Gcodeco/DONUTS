@@ -26,7 +26,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 ## 📦 Instalação e Execução Local
 
-Siga os passos abaixo para rodar o projeto localmente:
+## Siga os passos abaixo para rodar o projeto localmente:
 
 1. **Instale as dependências**:
    ```bash
@@ -36,13 +36,26 @@ Siga os passos abaixo para rodar o projeto localmente:
    ```bash
    npm start
    
-##Acesse no navegador:
+## Acesse no navegador:
+
 - Abra http://localhost:3000 para visualizar a aplicação.
 
-##📜 Scripts Disponíveis
+## 📜 Scripts Disponíveis
 -**npm start**: Executa o aplicativo em modo de desenvolvimento.
 -**npm test**: Roda os testes no modo interativo.
 -**npm run build**: Gera a versão otimizada do aplicativo para produção.
 -**npm run eject**: Remove a configuração padrão do Create React App.
-   
+
+## 🛠 Estrutura de Pastas
+```bash
+  DONUTS/
+├── public/          # Arquivos públicos (imagens, favicon, etc.)
+├── src/             # Código-fonte da aplicação
+│   ├── components/  # Componentes reutilizáveis
+│   ├── pages/       # Páginas principais do aplicativo
+│   ├── styles/      # Arquivos de estilo (CSS/SASS)
+│   └── App.js       # Componente principal
+├── package.json     # Configuração de dependências do projeto
+└── README.md        # Documentação do projeto
+ 
 
