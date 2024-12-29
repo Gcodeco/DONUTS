@@ -1,0 +1,806 @@
+/* CSS geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  min-width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding-left: 7.5vw; /* Adicionando 7.5% de padding à esquerda */
+  padding-right: 7.5vw; /* Adicionando 7.5% de padding à direita */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* Barra de navegação */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 90px;
+  width: 100%; /* Garante que a navegação ocupe toda a largura */
+  position: relative;
+  padding: 0 2rem; /* Espaçamento lateral */
+  max-width: 1700px; /* Limita a largura máxima da nav */
+  margin: 0 auto; /* Centraliza a barra */
+}
+
+.nav-logo-container {
+  max-width: 140px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-bar-menu-container {
+  display: none;
+}
+
+.nav-bar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: rgb(247, 182, 193);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transição mais suave */
+}
+
+.primary-button:hover {
+  background-color: #5dcefb;
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Home Banner */
+.home-banner-container {
+  position: relative;
+  display: flex;
+  padding-top: 4rem;
+}
+
+.home-bannerImage-container {
+  position: absolute;
+  top: -40px;
+  right: 0%;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.home-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centraliza a imagem do donut */
+  position: relative; /* Permite o posicionamento absoluto da imagem do donut */
+}
+
+.home-primary-image {
+  position: absolute; /* A imagem do donut será posicionada de forma absoluta dentro da seção */
+  top: 50%; /* Ajuste para a imagem aparecer no meio da tela */
+  left: 50%; /* Centraliza a imagem na horizontal */
+  transform: translate(
+    12%,
+    -122%
+  ); /* Centraliza a imagem em relação ao seu ponto de referência */
+  width: 100%;
+  max-width: 900px; /* Tamanho máximo da imagem */
+  height: auto;
+  object-fit: cover;
+  z-index: 1; /* Garante que a imagem do donut fique acima da imagem de fundo */
+}
+
+.home-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #6a6a6a;
+  margin: 2rem 0rem; /* Ajuste para um espaçamento mais controlado */
+  max-width: 850px;
+}
+
+.secondary-button {
+  padding: 1rem 2.5rem;
+  background-color: #5dcefb;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-button:hover {
+  background-color: #81d5f7;
+}
+
+/* about */
+.secondary-button svg {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.about-section-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-background-image-container {
+  position: absolute;
+  z-index: -2;
+  object-fit: contain;
+  width: 460px;
+  height: 660px;
+}
+
+.about-section-imagem-container {
+  flex: 0, 9;
+}
+
+.about-section-imagem-container img {
+  width: 760px;
+  margin-left: 240px;
+  margin-bottom: 224px;
+  z-index: 1;
+}
+
+.about-section-text-container {
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 4%;
+}
+
+.primary-subheading {
+  font-weight: 700;
+  color: rgb(253, 127, 148);
+  font-size: 3rem;
+}
+
+.about-buttons-container {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.watch-vide-button {
+  margin-left: 2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #484848;
+  transition: 8.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-vide-button svg {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+/* Work component */
+.work-section-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-section-wrapper .work-section-top p {
+  max-width: 1200px !important;
+  text-align: center;
+}
+
+.work-section-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-section-top h1 {
+  max-width: 700px !important;
+  color: #4c4c4c;
+}
+
+.work-section-info {
+  width: 290px;
+  min-height: 350px;
+  background-color: #f1e3e3;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  color: #505050;
+  margin: 1rem 2rem;
+}
+.work-section-info h2 {
+  margin: 1rem 0;
+}
+
+.work-section-info p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.work-section-bottom {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-boxes-img-container {
+  font-size: 100px;
+  color: pink;
+}
+
+/* testimonial */
+
+.testimonial-section-botton {
+  margin: 1rem;
+  background-color: #f1e3e3;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 750px;
+  border-radius: 2rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonial-section-botton p {
+  font-weight: 700;
+  color: #515151;
+  max-width: 500px;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+.testimonials-star-container svg {
+  margin: 0 0.25rem;
+  font-size: 1.5rem;
+  color: #fe9e3d;
+}
+
+.testimonial-section-botton h2 {
+  margin-top: 1.5rem;
+}
+
+.testimonial-section-botton img {
+  border-radius: 50%;
+  width: 140px;
+  opacity: 91%;
+  filter: grayscale(20%);
+}
+
+/* contact */
+
+.contact-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6rem 0;
+}
+
+.contact-page-wrapper h1 {
+  max-width: 900px !important;
+}
+.contact-page-wrapper h2 {
+  max-width: 900px !important;
+}
+
+.contact-form-container {
+  background-color: #f1e3e3;
+  max-width: 700px;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5rem;
+  gap: 10px;
+}
+
+.contact-form-container input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+}
+
+/* footer */
+
+.footer-wrapper {
+  margin: 6rem 10rem;
+  display: flex;
+}
+
+.footer-logo-container {
+  width: 200px;
+  height: 160px;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons svg {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #585858;
+}
+
+.footer-section-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+
+.footer-section-columns span {
+  margin: 0.25rem 0;
+  font-weight: 600;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reem Kufi", sans-serif !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .App {
+    min-width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding-left: 7.5vw; /* Adicionando 7.5% de padding à esquerda */
+    padding-right: 7.5vw; /* Adicionando 7.5% de padding à direita */
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+
+  /* Barra de navegação */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 90px;
+    width: 100%; /* Garante que a navegação ocupe toda a largura */
+    position: relative;
+    padding: 0 2rem; /* Espaçamento lateral */
+    max-width: 1700px; /* Limita a largura máxima da nav */
+    margin: 0 auto; /* Centraliza a barra */
+  }
+
+  .nav-logo-container {
+    max-width: 140px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .nav-bar-menu-container {
+    display: felx;
+  }
+
+  .primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: rgb(247, 182, 193);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição mais suave */
+  }
+
+  .primary-button:hover {
+    background-color: #5dcefb;
+    transform: scale(1.05); /* Leve aumento no hover */
+  }
+
+  /* Home Banner */
+  .home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 4rem;
+  }
+
+  .home-bannerImage-container {
+    position: absolute;
+    top: -40px;
+    right: 0%;
+    z-index: -1;
+    max-width: 50%;
+  }
+
+  .home-image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem do donut */
+    position: relative; /* Permite o posicionamento absoluto da imagem do donut */
+  }
+
+  .home-primary-image {
+    position: absolute; /* A imagem do donut será posicionada de forma absoluta dentro da seção */
+    top: 50%; /* Ajuste para a imagem aparecer no meio da tela */
+    left: 50%; /* Centraliza a imagem na horizontal */
+    transform: translate(
+      0%,
+      -125%
+    ); /* Centraliza a imagem em relação ao seu ponto de referência */
+    width: 100%;
+    max-width: 700px; /* Tamanho máximo da imagem */
+    height: auto;
+    object-fit: cover;
+    z-index: 1; /* Garante que a imagem do donut fique acima da imagem de fundo */
+  }
+
+  .home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .primary-heading {
+    font-size: clamp(1rem, 5vw, 3rem);
+    color: #4c4c4c;
+    max-width: 600px;
+    margin-top: -17px;
+  }
+
+  .primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: #6a6a6a;
+    margin: 2rem 0rem; /* Ajuste para um espaçamento mais controlado */
+    max-width: 720px;
+  }
+
+  .secondary-button {
+    padding: 1rem 2.5rem;
+    background-color: #5dcefb;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .secondary-button:hover {
+    background-color: #81d5f7;
+  }
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Logo */
+  .nav-logo-container {
+    max-width: 150px;
+  }
+
+  .nav-bar-menu-container svg {
+    font-size: 2.5rem;
+    margin-top: 9px;
+  }
+
+  .navbar-links-container {
+    display: none; /* Escondendo os links */
+  }
+
+  /* Menu */
+  .nav-bar-menu-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* Menu lateral (Drawer) */
+  .MuiDrawer-root {
+    width: 250px; /* Largura do menu lateral */
+    height: 100%; /* O menu ocupa toda a altura da tela */
+    position: fixed; /* Fixa o menu no lado direito */
+    top: 0;
+    right: 0;
+    z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
+  }
+
+  /* Estilo dos itens dentro do Drawer */
+  .MuiList-root {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .MuiListItem-root {
+    width: 100%;
+    padding: 0; /* Removido o padding extra */
+    margin: 0; /* Removido margem extra */
+  }
+
+  .MuiListItemButton-root {
+    width: 100%;
+    padding: 0; /* Removido o padding */
+    display: flex;
+    align-items: center; /* Garante que os itens fiquem alinhados verticalmente */
+  }
+
+  .MuiListItemIcon-root {
+    min-width: 40px;
+    margin-right: 0; /* Removido a margem entre o ícone e o texto */
+  }
+
+  .MuiListItemText-root {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* Ajuste na seção de imagem do banner */
+
+  .home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 4rem;
+  }
+
+  .home-bannerImage-container {
+    position: absolute;
+    top: 30px;
+    right: 0%;
+    z-index: -1;
+    max-width: 100%;
+    opacity: 60%;
+  }
+
+  .home-image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem do donut */
+    position: relative; /* Permite o posicionamento absoluto da imagem do donut */
+  }
+
+  .home-primary-image {
+    display: none;
+    position: absolute; /* A imagem do donut será posicionada de forma absoluta dentro da seção */
+    top: 50%; /* Ajuste para a imagem aparecer no meio da tela */
+    left: 50%; /* Centraliza a imagem na horizontal */
+    transform: translate(
+      -50%,
+      -235%
+    ); /* Centraliza a imagem em relação ao seu ponto de referência */
+    width: 100%;
+    max-width: 900px; /* Tamanho máximo da imagem */
+    height: auto;
+    object-fit: cover;
+    z-index: -2; /* Garante que a imagem do donut fique acima da imagem de fundo */
+    opacity: 40%;
+  }
+
+  /* Ajustes no texto */
+  .home-text-section {
+    padding: 2rem; /* Ajuste no espaçamento do texto */
+    text-align: center; /* Centraliza o texto em telas pequenas */
+  }
+
+  .primary-heading {
+    font-size: clamp(
+      1.8rem,
+      6vw,
+      3.5rem
+    ); /* Ajuste no tamanho da fonte para telas pequenas */
+    text-align: center; /* Centraliza o título */
+    margin-top: -10px;
+  }
+
+  .primary-text {
+    font-size: clamp(
+      1rem,
+      5vw,
+      1.3rem
+    ); /* Ajuste responsivo no tamanho do texto */
+    margin: 2rem 0rem;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .secondary-button {
+    padding: 1rem 2.5rem;
+    background-color: #5dcefb;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-background-image-container {
+    display: none;
+  }
+
+  .about-section-container {
+    flex-direction: column;
+  }
+
+  .about-section-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-buttons-container {
+    margin-left: 0rem !important;
+    margin-top: 1rem;
+    font-size: 1rem !important;
+  }
+
+  .about-section-imagem-container {
+    margin-top: 5rem !important;
+  }
+
+  .about-section-imagem-container img {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin: -306px -33px 1px 14px;
+  }
+
+  .work-section-wrapper {
+    margin-top: 3rem !important;
+  }
+
+  .work-section-bottom {
+    margin-top: 1rem !important;
+  }
+
+  /* contact */
+  .contact-page-wrapper {
+    margin-top: 5rem !important;
+  }
+
+  .contact-form-container {
+    padding: 1rem !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem !important;
+  }
+
+  .contact-form-container input {
+    font-size: 1rem in !important;
+    max-width: 100%;
+    padding: 0.5rem 1rem !important;
+    margin-bottom: 0.8rem !important ;
+  }
+
+  /* footer */
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .footer-section-two {
+    flex-direction: column;
+  }
+
+  .footer-section-columns {
+    margin: 1rem 0;
+  }
+
+  .App {
+    max-width: 95vw;
+  }
+}
