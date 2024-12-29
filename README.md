@@ -23,3 +23,26 @@ Siga os passos abaixo para rodar o projeto localmente:
    ```bash
    git clone https://github.com/Gcodeco/DONUTS.git
    cd DONUTS
+
+## 📦 Instalação e Execução Local
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. **Instale as dependências**:
+   ```bash
+   npm install
+   
+2. ** Execute o projeto:
+   ```bash
+   npm start
+   
+##Acesse no navegador:
+- **Abra http://localhost:3000 para visualizar a aplicação.
+
+##📜 Scripts Disponíveis
+-** npm start: Executa o aplicativo em modo de desenvolvimento.
+-** npm test: Roda os testes no modo interativo.
+-** npm run build: Gera a versão otimizada do aplicativo para produção.
+-** npm run eject: Remove a configuração padrão do Create React App.
+   
+
