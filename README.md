@@ -59,11 +59,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 └── README.md        # Documentação do projeto
 
 
-## 🤝 Contribuindo
-**Sinta-se à vontade para contribuir com este projeto! Você pode:**
 
-1. **Criar um fork do projeto.**
 
-2. **Criar um branch para sua feature ou correção:**
  
 
