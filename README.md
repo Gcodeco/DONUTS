@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+DONUTS
+Bem-vindo ao repositório do DONUTS! Este é um projeto de uma loja virtual de donuts desenvolvida com React, HTML, CSS e JavaScript. Ele simula uma aplicação de e-commerce, permitindo que os usuários explorem produtos, visualizem detalhes e adicionem itens ao carrinho.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧁 Funcionalidades
+Navegação por uma lista de produtos.
+Visualização de detalhes de cada produto.
+Adição de produtos ao carrinho de compras.
+Interface interativa e responsiva.
+🚀 Tecnologias Utilizadas
+React: Biblioteca JavaScript para criação de interfaces de usuário.
+HTML5 e CSS3: Estruturação e estilização da aplicação.
+JavaScript: Para a lógica de funcionamento da aplicação.
+📦 Instalação e Execução Local
+Siga os passos abaixo para rodar o projeto localmente:
 
-## Available Scripts
+Clone este repositório:
 
-In the project directory, you can run:
+bash
+Copiar código
+git clone https://github.com/Gcodeco/DONUTS.git
+cd DONUTS
+Instale as dependências:
 
-### `npm start`
+bash
+Copiar código
+npm install
+Execute o projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copiar código
+npm start
+Acesse no navegador: Abra http://localhost:3000 para visualizar a aplicação.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📜 Scripts Disponíveis
+npm start: Executa o aplicativo em modo de desenvolvimento.
+npm test: Roda os testes no modo interativo.
+npm run build: Gera a versão otimizada do aplicativo para produção.
+npm run eject: Remove a configuração padrão do Create React App.
+🛠 Estrutura de Pastas
+plaintext
+Copiar código
+DONUTS/
+├── public/          # Arquivos públicos (imagens, favicon, etc.)
+├── src/             # Código-fonte da aplicação
+│   ├── components/  # Componentes reutilizáveis
+│   ├── styles/      # Arquivos de estilo (CSS/SASS)
+│   └── App.js       # Componente principal
+├── package.json     # Configuração de dependências do projeto
+└── README.md        # Documentação do projeto
+🤝 Contribuindo
+Sinta-se à vontade para contribuir com este projeto! Você pode:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Criar um fork do projeto.
+Criar um branch para sua feature ou correção:
+bash
+Copiar código
+git checkout -b minha-feature
+Fazer um commit das alterações:
+bash
+Copiar código
+git commit -m "Adiciona minha feature"
+Enviar para o branch principal:
+bash
+Copiar código
+git push origin minha-feature
+Abrir um Pull Request.
