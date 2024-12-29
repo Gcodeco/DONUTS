@@ -32,17 +32,17 @@ Siga os passos abaixo para rodar o projeto localmente:
    ```bash
    npm install
    
-2. ** Execute o projeto:
+2. **Execute o projeto**:
    ```bash
    npm start
    
 ##Acesse no navegador:
-- **Abra http://localhost:3000 para visualizar a aplicação.
+- Abra http://localhost:3000 para visualizar a aplicação.
 
 ##📜 Scripts Disponíveis
--** npm start: Executa o aplicativo em modo de desenvolvimento.
--** npm test: Roda os testes no modo interativo.
--** npm run build: Gera a versão otimizada do aplicativo para produção.
--** npm run eject: Remove a configuração padrão do Create React App.
+-**npm start**: Executa o aplicativo em modo de desenvolvimento.
+-**npm test**: Roda os testes no modo interativo.
+-**npm run build**: Gera a versão otimizada do aplicativo para produção.
+-**npm run eject**: Remove a configuração padrão do Create React App.
    
 
