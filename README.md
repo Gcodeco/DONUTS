@@ -47,7 +47,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 - **npm run eject**: Remove a configuração padrão do Create React App.
 
 ## 🛠 Estrutura de Pastas
-```bash
+```plaintext
   DONUTS/
 ├── public/          # Arquivos públicos (imagens, favicon, etc.)
 ├── src/             # Código-fonte da aplicação
@@ -57,9 +57,3 @@ Siga os passos abaixo para rodar o projeto localmente:
 │   └── App.js       # Componente principal
 ├── package.json     # Configuração de dependências do projeto
 └── README.md        # Documentação do projeto
-
-
-
-
- 
-
